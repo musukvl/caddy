@@ -2,7 +2,7 @@
 FROM caddy:2-builder AS builder
 
 RUN xcaddy build \
-    --with github.com/caddy-dns/godaddy
+    --with github.com/caddy-dns/digitalocean
 
 # Final image
 FROM caddy:2
